@@ -1,0 +1,325 @@
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "name",
+    "outputs": [{ "name": "", "type": "string" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "uint256" }],
+    "name": "LREsOfferedForSale",
+    "outputs": [
+      { "name": "isForSale", "type": "bool" },
+      { "name": "LREIndex", "type": "uint256" },
+      { "name": "seller", "type": "address" },
+      { "name": "minValue", "type": "uint256" },
+      { "name": "onlySellTo", "type": "address" }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [{ "name": "LREIndex", "type": "uint256" }],
+    "name": "enterBidForLRE",
+    "outputs": [],
+    "payable": true,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "totalSupply",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "LREIndex", "type": "uint256" },
+      { "name": "minPrice", "type": "uint256" }
+    ],
+    "name": "acceptBidForLRE",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "decimals",
+    "outputs": [{ "name": "", "type": "uint8" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "addresses", "type": "address[]" },
+      { "name": "indices", "type": "uint256[]" }
+    ],
+    "name": "setInitialOwners",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "withdraw",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "imageHash",
+    "outputs": [{ "name": "", "type": "string" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "nextLREIndexToAssign",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "uint256" }],
+    "name": "LREIndexToAddress",
+    "outputs": [{ "name": "", "type": "address" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "standard",
+    "outputs": [{ "name": "", "type": "string" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "uint256" }],
+    "name": "LREBids",
+    "outputs": [
+      { "name": "hasBid", "type": "bool" },
+      { "name": "LREIndex", "type": "uint256" },
+      { "name": "bidder", "type": "address" },
+      { "name": "value", "type": "uint256" }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "address" }],
+    "name": "balanceOf",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "allInitialOwnersAssigned",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "allLREsAssigned",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [{ "name": "LREIndex", "type": "uint256" }],
+    "name": "buyLRE",
+    "outputs": [],
+    "payable": true,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "to", "type": "address" },
+      { "name": "LREIndex", "type": "uint256" }
+    ],
+    "name": "transferLRE",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "symbol",
+    "outputs": [{ "name": "", "type": "string" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [{ "name": "LREIndex", "type": "uint256" }],
+    "name": "withdrawBidForLRE",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "to", "type": "address" },
+      { "name": "LREIndex", "type": "uint256" }
+    ],
+    "name": "setInitialOwner",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "LREIndex", "type": "uint256" },
+      { "name": "minSalePriceInWei", "type": "uint256" },
+      { "name": "toAddress", "type": "address" }
+    ],
+    "name": "offerLREForSaleToAddress",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "LREsRemainingToAssign",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "LREIndex", "type": "uint256" },
+      { "name": "minSalePriceInWei", "type": "uint256" }
+    ],
+    "name": "offerLREForSale",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [{ "name": "LREIndex", "type": "uint256" }],
+    "name": "getLRE",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [{ "name": "", "type": "address" }],
+    "name": "pendingWithdrawals",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [{ "name": "LREIndex", "type": "uint256" }],
+    "name": "LRENoLongerForSale",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  { "inputs": [], "payable": true, "type": "constructor" },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "to", "type": "address" },
+      { "indexed": false, "name": "LREIndex", "type": "uint256" }
+    ],
+    "name": "Assign",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "from", "type": "address" },
+      { "indexed": true, "name": "to", "type": "address" },
+      { "indexed": false, "name": "value", "type": "uint256" }
+    ],
+    "name": "Transfer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "from", "type": "address" },
+      { "indexed": true, "name": "to", "type": "address" },
+      { "indexed": false, "name": "LREIndex", "type": "uint256" }
+    ],
+    "name": "LRETransfer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "LREIndex", "type": "uint256" },
+      { "indexed": false, "name": "minValue", "type": "uint256" },
+      { "indexed": true, "name": "toAddress", "type": "address" }
+    ],
+    "name": "LREOffered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "LREIndex", "type": "uint256" },
+      { "indexed": false, "name": "value", "type": "uint256" },
+      { "indexed": true, "name": "fromAddress", "type": "address" }
+    ],
+    "name": "LREBidEntered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "LREIndex", "type": "uint256" },
+      { "indexed": false, "name": "value", "type": "uint256" },
+      { "indexed": true, "name": "fromAddress", "type": "address" }
+    ],
+    "name": "LREBidWithdrawn",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "LREIndex", "type": "uint256" },
+      { "indexed": false, "name": "value", "type": "uint256" },
+      { "indexed": true, "name": "fromAddress", "type": "address" },
+      { "indexed": true, "name": "toAddress", "type": "address" }
+    ],
+    "name": "LREBought",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [{ "indexed": true, "name": "LREIndex", "type": "uint256" }],
+    "name": "LRENoLongerForSale",
+    "type": "event"
+  }
+]

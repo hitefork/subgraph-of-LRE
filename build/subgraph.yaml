@@ -1,0 +1,45 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: LooksRareExchange
+    network: mainnet
+    source:
+      address: "0x59728544b08ab483533076417fbbb2fd0b17ce3a"
+      abi: LooksRareExchange
+      startBlock: 13885625
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Assign
+        - Transfer
+        - LRETransfer
+        - LREOffered
+        - LREBidEntered
+        - LREBidWithdrawn
+        - LREBought
+        - LRENoLongerForSale
+      abis:
+        - name: LooksRareExchange
+          file: LooksRareExchange\abis\LooksRareExchange.json
+      eventHandlers:
+        - event: Assign(indexed address,uint256)
+          handler: handleAssign
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        - event: LRETransfer(indexed address,indexed address,uint256)
+          handler: handleLRETransfer
+        - event: LREOffered(indexed uint256,uint256,indexed address)
+          handler: handleLREOffered
+        - event: LREBidEntered(indexed uint256,uint256,indexed address)
+          handler: handleLREBidEntered
+        - event: LREBidWithdrawn(indexed uint256,uint256,indexed address)
+          handler: handleLREBidWithdrawn
+        - event: LREBought(indexed uint256,uint256,indexed address,indexed address)
+          handler: handleLREBought
+        - event: LRENoLongerForSale(indexed uint256)
+          handler: handleLRENoLongerForSale
+      file: LooksRareExchange\LooksRareExchange.wasm
